@@ -45,7 +45,7 @@
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button8.Location = new System.Drawing.Point(463, 295);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(91, 48);
+            this.button8.Size = new System.Drawing.Size(136, 48);
             this.button8.TabIndex = 14;
             this.button8.Text = "Отчет";
             this.button8.UseVisualStyleBackColor = true;
@@ -55,17 +55,18 @@
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button7.Location = new System.Drawing.Point(463, 236);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(91, 50);
+            this.button7.Size = new System.Drawing.Size(136, 50);
             this.button7.TabIndex = 13;
             this.button7.Text = "Услуги";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button6.Location = new System.Drawing.Point(463, 179);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(91, 50);
+            this.button6.Size = new System.Drawing.Size(136, 50);
             this.button6.TabIndex = 12;
             this.button6.Text = "Инструкторы";
             this.button6.UseVisualStyleBackColor = true;
@@ -76,7 +77,7 @@
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button5.Location = new System.Drawing.Point(463, 121);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(91, 50);
+            this.button5.Size = new System.Drawing.Size(136, 50);
             this.button5.TabIndex = 11;
             this.button5.Text = "Удалить клиента";
             this.button5.UseVisualStyleBackColor = true;
@@ -87,7 +88,7 @@
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button4.Location = new System.Drawing.Point(463, 64);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(91, 50);
+            this.button4.Size = new System.Drawing.Size(136, 50);
             this.button4.TabIndex = 10;
             this.button4.Text = "Анкета клиента";
             this.button4.UseVisualStyleBackColor = true;
@@ -98,7 +99,7 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.Location = new System.Drawing.Point(463, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(91, 54);
+            this.button3.Size = new System.Drawing.Size(136, 54);
             this.button3.TabIndex = 9;
             this.button3.Text = "Новый клиент";
             this.button3.UseVisualStyleBackColor = true;
@@ -141,7 +142,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(563, 354);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(606, 350);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);

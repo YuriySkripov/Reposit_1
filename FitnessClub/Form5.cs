@@ -23,7 +23,9 @@ namespace FitnessClub
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "fitnessClubDataSet5.Instructors". При необходимости она может быть перемещена или удалена.
             this.instructorsTableAdapter.Fill(this.fitnessClubDataSet5.Instructors);
-           
+            this.dataGridView1.Columns[0].Visible = false;
+            this.dataGridView1.Columns[1].Visible = false;
+            this.dataGridView1.Columns[2].Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)

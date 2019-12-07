@@ -12,9 +12,9 @@ using System.IO;
 
 namespace FitnessClub
 {
-    public partial class Form2 : Form
+    public partial class Form7 : Form
     {
-        public Form2()
+        public Form7()
         {
             InitializeComponent();
         }
@@ -50,18 +50,10 @@ namespace FitnessClub
             maskedTextBox1.Enabled = false;
             textBox4.Enabled = false;
 
-         
-        }
+            this.Close();
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
-        {
-           
-
+            Form3 f = new Form3();
+            f.Show();
         }
     }
 }
