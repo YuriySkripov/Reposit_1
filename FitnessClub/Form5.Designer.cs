@@ -29,43 +29,48 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID_Instructor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.fitnessClubDataSet5 = new FitnessClub.FitnessClubDataSet5();
-            this.instructorsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.instructorsTableAdapter = new FitnessClub.FitnessClubDataSet5TableAdapters.InstructorsTableAdapter();
             this.iDInstructorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameInstructorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.photoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.instructorsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fitnessClubDataSet5 = new FitnessClub.FitnessClubDataSet5();
+            this.instructorsTableAdapter = new FitnessClub.FitnessClubDataSet5TableAdapters.InstructorsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fitnessClubDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.instructorsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fitnessClubDataSet5)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(12, 276);
+            this.button1.Location = new System.Drawing.Point(88, 276);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(140, 56);
             this.button1.TabIndex = 1;
             this.button1.Text = "Добавить инструктора";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(158, 276);
+            this.button2.Location = new System.Drawing.Point(234, 276);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(140, 56);
             this.button2.TabIndex = 2;
             this.button2.Text = "Удалить инструктора";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // ID
@@ -85,6 +90,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Info;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID_Instructor,
@@ -99,20 +105,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(431, 258);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // fitnessClubDataSet5
-            // 
-            this.fitnessClubDataSet5.DataSetName = "FitnessClubDataSet5";
-            this.fitnessClubDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // instructorsBindingSource
-            // 
-            this.instructorsBindingSource.DataMember = "Instructors";
-            this.instructorsBindingSource.DataSource = this.fitnessClubDataSet5;
-            // 
-            // instructorsTableAdapter
-            // 
-            this.instructorsTableAdapter.ClearBeforeFill = true;
             // 
             // iDInstructorDataGridViewTextBoxColumn
             // 
@@ -139,20 +131,37 @@
             this.photoDataGridViewTextBoxColumn.HeaderText = "Photo";
             this.photoDataGridViewTextBoxColumn.Name = "photoDataGridViewTextBoxColumn";
             // 
+            // instructorsBindingSource
+            // 
+            this.instructorsBindingSource.DataMember = "Instructors";
+            this.instructorsBindingSource.DataSource = this.fitnessClubDataSet5;
+            // 
+            // fitnessClubDataSet5
+            // 
+            this.fitnessClubDataSet5.DataSetName = "FitnessClubDataSet5";
+            this.fitnessClubDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // instructorsTableAdapter
+            // 
+            this.instructorsTableAdapter.ClearBeforeFill = true;
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(473, 385);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(455, 340);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form5";
-            this.Text = "Form5";
+            this.Text = "Инструкторы";
             this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fitnessClubDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.instructorsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fitnessClubDataSet5)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -63,5 +63,12 @@ namespace FitnessClub
            
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form8 f = new Form8();
+            f.Show();
+
+        }
     }
 }

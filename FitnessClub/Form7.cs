@@ -55,5 +55,16 @@ namespace FitnessClub
             Form3 f = new Form3();
             f.Show();
         }
+
+        private void Form7_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form10 f = new Form10();
+            f.Show();
+        }
     }
 }

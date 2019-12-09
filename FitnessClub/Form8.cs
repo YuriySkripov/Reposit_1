@@ -23,6 +23,7 @@ namespace FitnessClub
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "fitnessClubDataSet6.Uslugi". При необходимости она может быть перемещена или удалена.
             this.uslugiTableAdapter.Fill(this.fitnessClubDataSet6.Uslugi);
+            this.dataGridView1.Columns[0].Visible = false;
 
         }
 
@@ -50,6 +51,12 @@ namespace FitnessClub
             comm.ExecuteScalar();
             conn.Close();
             this.uslugiTableAdapter.Fill(this.fitnessClubDataSet6.Uslugi);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form11 f = new Form11();
+            f.Show();
         }
     }
 }
